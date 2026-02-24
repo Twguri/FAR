@@ -61,8 +61,10 @@ function toPngName(pictureId: string) {
 }
 
 function getImageCandidates(fluid: Fluid, pictureId: string) {
-  const png = `/patterns_png/${fluid}/${toPngName(pictureId)}`;
-  const orig = `/patterns/${fluid}/${pictureId}`;
+  // Vite 在 GH pages 下 BASE_URL 会是 "/FAR/"，本地 dev 是 "/"
+  const base = import.meta.env.BASE_URL; // always ends with "/"
+  const png = `${base}patterns_png/${fluid}/${toPngName(pictureId)}`;
+  const orig = `${base}patterns/${fluid}/${pictureId}`;
   return [png, orig];
 }
 
