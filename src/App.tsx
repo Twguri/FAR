@@ -436,7 +436,7 @@ function OverlayPage() {
 
   return (
     <div style={pageShellStyle}>
-      <div style={{ maxWidth: 1040, margin: "0 auto" }}>
+      <div style={{ width: "min(1400px, 95vw)", margin: "0 auto" }}>
         <Header
           title="Overlay View"
           subtitle="Up vs Down lower-threshold boundary (hysteresis)"
