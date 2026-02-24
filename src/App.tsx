@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, Link, useNavigate } from "react-router-dom";
+import { Routes, Route, Link, useNavigate, Navigate } from "react-router-dom";
 
 // ✅ 你的 4 个 JSON
 import waterUp from "./datasets/json/water_up.json";
@@ -173,6 +173,7 @@ export default function App() {
     <Routes>
       <Route path="/" element={<PhaseMapPage />} />
       <Route path="/overlay" element={<OverlayPage />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
 }
