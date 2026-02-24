@@ -223,7 +223,7 @@ function PhaseMapPage() {
 
   return (
     <div style={pageShellStyle}>
-      <div style={{ maxWidth: 1040, margin: "0 auto" }}>
+      <div style={{ width:"min(1400px, 95vw)", margin: "0 auto" }}>
         <Header
           title="FAR Phase Diagram"
           subtitle={`Dataset: ${ds.id} · ${ds.source_csv}`}
