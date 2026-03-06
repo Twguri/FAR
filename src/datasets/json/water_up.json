@@ -2,16 +2,12 @@
   "id": "water_up",
   "source_csv": "src/datasets/csv/water_up.csv",
   "meta": {
-    "gamma_input_unit": "mV (peak, scope Maximum, AC coupled)",
-    "Gamma_definition": "Gamma = a_max/g = Vmax(mV) / 250(mV/g)",
     "sensitivity_mV_per_g": 250,
-    "df_hz_default": 1,
-    "note_picture_id_dash": "picture_id '-' means: no image yet (still a valid pattern/phase).",
-    "note_gamma_upper_null": "Gamma_upper null (from '-') means: upper boundary not measured yet; fill later."
+    "df_hz": 1,
+    "note": "Gamma = mV / 250. gamma_upper '-' => null. picture_items merges same (Frequency, gamma_lower, gamma_upper)."
   },
   "regions": [
     {
-      "index": 0,
       "drive_frequency": 10,
       "Frequency": 5,
       "df": 1,
@@ -21,23 +17,37 @@
       "gamma_upper_mV": 20.5,
       "Gamma_lower": 0,
       "Gamma_upper": 0.082,
-      "picture_id": "-"
+      "picture_id": "10Hz_1.png",
+      "picture_items": [
+        {
+          "id": "10Hz_1.png",
+          "color": "blue"
+        }
+      ],
+      "color": "blue",
+      "index": 1
     },
     {
-      "index": 1,
       "drive_frequency": 10,
       "Frequency": 5,
       "df": 1,
       "f_min": 4.5,
       "f_max": 5.5,
       "gamma_lower_mV": 20.5,
-      "gamma_upper_mV": null,
+      "gamma_upper_mV": 37.8,
       "Gamma_lower": 0.082,
-      "Gamma_upper": null,
-      "picture_id": "10Hz_2.tif"
+      "Gamma_upper": 0.1512,
+      "picture_id": "10Hz_3.tif",
+      "picture_items": [
+        {
+          "id": "10Hz_3.tif",
+          "color": "red"
+        }
+      ],
+      "color": "red",
+      "index": 2
     },
     {
-      "index": 2,
       "drive_frequency": 11,
       "Frequency": 5.5,
       "df": 1,
@@ -47,49 +57,65 @@
       "gamma_upper_mV": 25.1,
       "Gamma_lower": 0,
       "Gamma_upper": 0.1004,
-      "picture_id": "11Hz_1.tif"
+      "picture_id": "11Hz_1.tif",
+      "picture_items": [
+        {
+          "id": "11Hz_1.tif",
+          "color": "blue"
+        }
+      ],
+      "color": "blue",
+      "index": 3
     },
     {
-      "index": 3,
       "drive_frequency": 11,
       "Frequency": 5.5,
       "df": 1,
       "f_min": 5,
       "f_max": 6,
       "gamma_lower_mV": 25.1,
-      "gamma_upper_mV": null,
+      "gamma_upper_mV": 47.2,
       "Gamma_lower": 0.1004,
-      "Gamma_upper": null,
-      "picture_id": "11Hz_2.1.tif"
+      "Gamma_upper": 0.18880000000000002,
+      "picture_id": "11Hz_2.1.tif",
+      "picture_items": [
+        {
+          "id": "11Hz_2.1.tif",
+          "color": "brown"
+        },
+        {
+          "id": "11Hz_2.2.tif",
+          "color": "brown"
+        },
+        {
+          "id": "11Hz_2.3.tif",
+          "color": "brown"
+        }
+      ],
+      "color": "brown",
+      "index": 4
     },
     {
-      "index": 4,
       "drive_frequency": 11,
       "Frequency": 5.5,
       "df": 1,
       "f_min": 5,
       "f_max": 6,
-      "gamma_lower_mV": 25.1,
-      "gamma_upper_mV": null,
-      "Gamma_lower": 0.1004,
-      "Gamma_upper": null,
-      "picture_id": "11Hz_2.2.tif"
+      "gamma_lower_mV": 47.2,
+      "gamma_upper_mV": 56,
+      "Gamma_lower": 0.18880000000000002,
+      "Gamma_upper": 0.224,
+      "picture_id": "11Hz_3.png",
+      "picture_items": [
+        {
+          "id": "11Hz_3.png",
+          "color": "red"
+        }
+      ],
+      "color": "red",
+      "index": 5
     },
     {
-      "index": 5,
-      "drive_frequency": 11,
-      "Frequency": 5.5,
-      "df": 1,
-      "f_min": 5,
-      "f_max": 6,
-      "gamma_lower_mV": 25.1,
-      "gamma_upper_mV": null,
-      "Gamma_lower": 0.1004,
-      "Gamma_upper": null,
-      "picture_id": "11Hz_2.3.tif"
-    },
-    {
-      "index": 6,
       "drive_frequency": 12,
       "Frequency": 6,
       "df": 1,
@@ -99,36 +125,41 @@
       "gamma_upper_mV": 19,
       "Gamma_lower": 0,
       "Gamma_upper": 0.076,
-      "picture_id": "12Hz_1.tif"
+      "picture_id": "12Hz_1.tif",
+      "picture_items": [
+        {
+          "id": "12Hz_1.tif",
+          "color": "blue"
+        }
+      ],
+      "color": "blue",
+      "index": 6
     },
     {
-      "index": 7,
       "drive_frequency": 12,
       "Frequency": 6,
       "df": 1,
       "f_min": 5.5,
       "f_max": 6.5,
       "gamma_lower_mV": 19,
-      "gamma_upper_mV": null,
+      "gamma_upper_mV": 35,
       "Gamma_lower": 0.076,
-      "Gamma_upper": null,
-      "picture_id": "12Hz_2.1.tif"
+      "Gamma_upper": 0.14,
+      "picture_id": "12Hz_2.1.tif",
+      "picture_items": [
+        {
+          "id": "12Hz_2.1.tif",
+          "color": "red"
+        },
+        {
+          "id": "12Hz_2.tif",
+          "color": "red"
+        }
+      ],
+      "color": "red",
+      "index": 7
     },
     {
-      "index": 8,
-      "drive_frequency": 12,
-      "Frequency": 6,
-      "df": 1,
-      "f_min": 5.5,
-      "f_max": 6.5,
-      "gamma_lower_mV": 19,
-      "gamma_upper_mV": null,
-      "Gamma_lower": 0.076,
-      "Gamma_upper": null,
-      "picture_id": "12Hz_2.2.tif"
-    },
-    {
-      "index": 9,
       "drive_frequency": 13,
       "Frequency": 6.5,
       "df": 1,
@@ -138,23 +169,37 @@
       "gamma_upper_mV": 24,
       "Gamma_lower": 0,
       "Gamma_upper": 0.096,
-      "picture_id": "13Hz_1.tif"
+      "picture_id": "13Hz_1.tif",
+      "picture_items": [
+        {
+          "id": "13Hz_1.tif",
+          "color": "blue"
+        }
+      ],
+      "color": "blue",
+      "index": 8
     },
     {
-      "index": 10,
       "drive_frequency": 13,
       "Frequency": 6.5,
       "df": 1,
       "f_min": 6,
       "f_max": 7,
       "gamma_lower_mV": 24,
-      "gamma_upper_mV": null,
+      "gamma_upper_mV": 60,
       "Gamma_lower": 0.096,
-      "Gamma_upper": null,
-      "picture_id": "13Hz_2.0.tif"
+      "Gamma_upper": 0.24,
+      "picture_id": "13Hz_2.0.tif",
+      "picture_items": [
+        {
+          "id": "13Hz_2.0.tif",
+          "color": "red"
+        }
+      ],
+      "color": "red",
+      "index": 9
     },
     {
-      "index": 11,
       "drive_frequency": 14,
       "Frequency": 7,
       "df": 1,
@@ -164,23 +209,37 @@
       "gamma_upper_mV": 25,
       "Gamma_lower": 0,
       "Gamma_upper": 0.1,
-      "picture_id": "-"
+      "picture_id": "14Hz_1.png",
+      "picture_items": [
+        {
+          "id": "14Hz_1.png",
+          "color": "blue"
+        }
+      ],
+      "color": "blue",
+      "index": 10
     },
     {
-      "index": 12,
       "drive_frequency": 14,
       "Frequency": 7,
       "df": 1,
       "f_min": 6.5,
       "f_max": 7.5,
       "gamma_lower_mV": 25,
-      "gamma_upper_mV": null,
+      "gamma_upper_mV": 56.7,
       "Gamma_lower": 0.1,
-      "Gamma_upper": null,
-      "picture_id": "14Hz_2.tif"
+      "Gamma_upper": 0.2268,
+      "picture_id": "14Hz_2.tif",
+      "picture_items": [
+        {
+          "id": "14Hz_2.tif",
+          "color": "red"
+        }
+      ],
+      "color": "red",
+      "index": 11
     },
     {
-      "index": 13,
       "drive_frequency": 15,
       "Frequency": 7.5,
       "df": 1,
@@ -190,23 +249,37 @@
       "gamma_upper_mV": 28.7,
       "Gamma_lower": 0,
       "Gamma_upper": 0.1148,
-      "picture_id": "-"
+      "picture_id": "15Hz_1.png",
+      "picture_items": [
+        {
+          "id": "15Hz_1.png",
+          "color": "blue"
+        }
+      ],
+      "color": "blue",
+      "index": 12
     },
     {
-      "index": 14,
       "drive_frequency": 15,
       "Frequency": 7.5,
       "df": 1,
       "f_min": 7,
       "f_max": 8,
       "gamma_lower_mV": 28.7,
-      "gamma_upper_mV": null,
+      "gamma_upper_mV": 46.2,
       "Gamma_lower": 0.1148,
-      "Gamma_upper": null,
-      "picture_id": "15Hz_2.tif"
+      "Gamma_upper": 0.18480000000000002,
+      "picture_id": "15Hz_2.tif",
+      "picture_items": [
+        {
+          "id": "15Hz_2.tif",
+          "color": "red"
+        }
+      ],
+      "color": "red",
+      "index": 13
     },
     {
-      "index": 15,
       "drive_frequency": 16,
       "Frequency": 8,
       "df": 1,
@@ -216,23 +289,37 @@
       "gamma_upper_mV": 31.3,
       "Gamma_lower": 0,
       "Gamma_upper": 0.1252,
-      "picture_id": "-"
+      "picture_id": "16Hz_1.png",
+      "picture_items": [
+        {
+          "id": "16Hz_1.png",
+          "color": "blue"
+        }
+      ],
+      "color": "blue",
+      "index": 14
     },
     {
-      "index": 16,
       "drive_frequency": 16,
       "Frequency": 8,
       "df": 1,
       "f_min": 7.5,
       "f_max": 8.5,
       "gamma_lower_mV": 31.3,
-      "gamma_upper_mV": null,
+      "gamma_upper_mV": 51.2,
       "Gamma_lower": 0.1252,
-      "Gamma_upper": null,
-      "picture_id": "-"
+      "Gamma_upper": 0.2048,
+      "picture_id": "16Hz_1.png",
+      "picture_items": [
+        {
+          "id": "16Hz_1.png",
+          "color": "black"
+        }
+      ],
+      "color": "black",
+      "index": 15
     },
     {
-      "index": 17,
       "drive_frequency": 17,
       "Frequency": 8.5,
       "df": 1,
@@ -242,23 +329,37 @@
       "gamma_upper_mV": 32,
       "Gamma_lower": 0,
       "Gamma_upper": 0.128,
-      "picture_id": "17Hz_1.tif"
+      "picture_id": "17Hz_1.tif",
+      "picture_items": [
+        {
+          "id": "17Hz_1.tif",
+          "color": "blue"
+        }
+      ],
+      "color": "blue",
+      "index": 16
     },
     {
-      "index": 18,
       "drive_frequency": 17,
       "Frequency": 8.5,
       "df": 1,
       "f_min": 8,
       "f_max": 9,
       "gamma_lower_mV": 32,
-      "gamma_upper_mV": null,
+      "gamma_upper_mV": 67.7,
       "Gamma_lower": 0.128,
-      "Gamma_upper": null,
-      "picture_id": "17Hz_2.tif"
+      "Gamma_upper": 0.2708,
+      "picture_id": "17Hz_2.tif",
+      "picture_items": [
+        {
+          "id": "17Hz_2.tif",
+          "color": "black"
+        }
+      ],
+      "color": "black",
+      "index": 17
     },
     {
-      "index": 19,
       "drive_frequency": 18,
       "Frequency": 9,
       "df": 1,
@@ -268,23 +369,37 @@
       "gamma_upper_mV": 35,
       "Gamma_lower": 0,
       "Gamma_upper": 0.14,
-      "picture_id": "18Hz_1.tif"
+      "picture_id": "18Hz_1.tif",
+      "picture_items": [
+        {
+          "id": "18Hz_1.tif",
+          "color": "blue"
+        }
+      ],
+      "color": "blue",
+      "index": 18
     },
     {
-      "index": 20,
       "drive_frequency": 18,
       "Frequency": 9,
       "df": 1,
       "f_min": 8.5,
       "f_max": 9.5,
       "gamma_lower_mV": 35,
-      "gamma_upper_mV": null,
+      "gamma_upper_mV": 78.2,
       "Gamma_lower": 0.14,
-      "Gamma_upper": null,
-      "picture_id": "18Hz_2.tif"
+      "Gamma_upper": 0.3128,
+      "picture_id": "18Hz_2.tif",
+      "picture_items": [
+        {
+          "id": "18Hz_2.tif",
+          "color": "black"
+        }
+      ],
+      "color": "black",
+      "index": 19
     },
     {
-      "index": 21,
       "drive_frequency": 19,
       "Frequency": 9.5,
       "df": 1,
@@ -294,23 +409,37 @@
       "gamma_upper_mV": 38.3,
       "Gamma_lower": 0,
       "Gamma_upper": 0.15319999999999998,
-      "picture_id": "19Hz_1.tif"
+      "picture_id": "19Hz_1.tif",
+      "picture_items": [
+        {
+          "id": "19Hz_1.tif",
+          "color": "blue"
+        }
+      ],
+      "color": "blue",
+      "index": 20
     },
     {
-      "index": 22,
       "drive_frequency": 19,
       "Frequency": 9.5,
       "df": 1,
       "f_min": 9,
       "f_max": 10,
       "gamma_lower_mV": 38.3,
-      "gamma_upper_mV": null,
+      "gamma_upper_mV": 85.4,
       "Gamma_lower": 0.15319999999999998,
-      "Gamma_upper": null,
-      "picture_id": "19Hz_2.tif"
+      "Gamma_upper": 0.3416,
+      "picture_id": "19Hz_2.tif",
+      "picture_items": [
+        {
+          "id": "19Hz_2.tif",
+          "color": "black"
+        }
+      ],
+      "color": "black",
+      "index": 21
     },
     {
-      "index": 23,
       "drive_frequency": 20,
       "Frequency": 10,
       "df": 1,
@@ -320,20 +449,35 @@
       "gamma_upper_mV": 44.3,
       "Gamma_lower": 0,
       "Gamma_upper": 0.1772,
-      "picture_id": "20Hz_1.tif"
+      "picture_id": "20Hz_1.tif",
+      "picture_items": [
+        {
+          "id": "20Hz_1.tif",
+          "color": "blue"
+        }
+      ],
+      "color": "blue",
+      "index": 22
     },
     {
-      "index": 24,
       "drive_frequency": 20,
       "Frequency": 10,
       "df": 1,
       "f_min": 9.5,
       "f_max": 10.5,
       "gamma_lower_mV": 44.3,
-      "gamma_upper_mV": null,
+      "gamma_upper_mV": 55,
       "Gamma_lower": 0.1772,
-      "Gamma_upper": null,
-      "picture_id": "20Hz_2.tif"
+      "Gamma_upper": 0.22,
+      "picture_id": "20Hz_2.tif",
+      "picture_items": [
+        {
+          "id": "20Hz_2.tif",
+          "color": "black"
+        }
+      ],
+      "color": "black",
+      "index": 23
     }
   ]
 }

@@ -2,16 +2,12 @@
   "id": "mineral_oil_down",
   "source_csv": "src/datasets/csv/mineral_oil_down.csv",
   "meta": {
-    "gamma_input_unit": "mV (peak, scope Maximum, AC coupled)",
-    "Gamma_definition": "Gamma = a_max/g = Vmax(mV) / 250(mV/g)",
     "sensitivity_mV_per_g": 250,
-    "df_hz_default": 1,
-    "note_picture_id_dash": "picture_id '-' means: no image yet (still a valid pattern/phase).",
-    "note_gamma_upper_null": "Gamma_upper null (from '-') means: upper boundary not measured yet; fill later."
+    "df_hz": 1,
+    "note": "Gamma = mV / 250. gamma_upper '-' => null. picture_items merges same (Frequency, gamma_lower, gamma_upper)."
   },
   "regions": [
     {
-      "index": 0,
       "drive_frequency": 13,
       "Frequency": 6.5,
       "df": 1,
@@ -21,10 +17,17 @@
       "gamma_upper_mV": 24.2,
       "Gamma_lower": 0,
       "Gamma_upper": 0.0968,
-      "picture_id": "-"
+      "picture_id": "O_13Hz_1.png",
+      "picture_items": [
+        {
+          "id": "O_13Hz_1.png",
+          "color": "blue"
+        }
+      ],
+      "color": "blue",
+      "index": 1
     },
     {
-      "index": 1,
       "drive_frequency": 13,
       "Frequency": 6.5,
       "df": 1,
@@ -34,23 +37,37 @@
       "gamma_upper_mV": 35.9,
       "Gamma_lower": 0.0968,
       "Gamma_upper": 0.1436,
-      "picture_id": "O_13_2.tif"
+      "picture_id": "O_13_2.png",
+      "picture_items": [
+        {
+          "id": "O_13_2.png",
+          "color": "purple"
+        }
+      ],
+      "color": "purple",
+      "index": 2
     },
     {
-      "index": 2,
       "drive_frequency": 13,
       "Frequency": 6.5,
       "df": 1,
       "f_min": 6,
       "f_max": 7,
       "gamma_lower_mV": 35.9,
-      "gamma_upper_mV": null,
+      "gamma_upper_mV": 57.3,
       "Gamma_lower": 0.1436,
-      "Gamma_upper": null,
-      "picture_id": "O_13_3.tif"
+      "Gamma_upper": 0.2292,
+      "picture_id": "O_13_3.png",
+      "picture_items": [
+        {
+          "id": "O_13_3.png",
+          "color": "red"
+        }
+      ],
+      "color": "red",
+      "index": 3
     },
     {
-      "index": 3,
       "drive_frequency": 14,
       "Frequency": 7,
       "df": 1,
@@ -60,36 +77,37 @@
       "gamma_upper_mV": 27.2,
       "Gamma_lower": 0,
       "Gamma_upper": 0.1088,
-      "picture_id": "-"
+      "picture_id": "O_14Hz_1.png",
+      "picture_items": [
+        {
+          "id": "O_14Hz_1.png",
+          "color": "blue"
+        }
+      ],
+      "color": "blue",
+      "index": 4
     },
     {
-      "index": 4,
       "drive_frequency": 14,
       "Frequency": 7,
       "df": 1,
       "f_min": 6.5,
       "f_max": 7.5,
       "gamma_lower_mV": 27.2,
-      "gamma_upper_mV": 40.4,
+      "gamma_upper_mV": 45.6,
       "Gamma_lower": 0.1088,
-      "Gamma_upper": 0.1616,
-      "picture_id": "O_14Hz_2.tif"
+      "Gamma_upper": 0.1824,
+      "picture_id": "O_14Hz_2.png",
+      "picture_items": [
+        {
+          "id": "O_14Hz_2.png",
+          "color": "purple"
+        }
+      ],
+      "color": "purple",
+      "index": 5
     },
     {
-      "index": 5,
-      "drive_frequency": 14,
-      "Frequency": 7,
-      "df": 1,
-      "f_min": 6.5,
-      "f_max": 7.5,
-      "gamma_lower_mV": 40.4,
-      "gamma_upper_mV": null,
-      "Gamma_lower": 0.1616,
-      "Gamma_upper": null,
-      "picture_id": "O_14Hz_3.tif"
-    },
-    {
-      "index": 6,
       "drive_frequency": 15,
       "Frequency": 7.5,
       "df": 1,
@@ -99,49 +117,45 @@
       "gamma_upper_mV": 31,
       "Gamma_lower": 0,
       "Gamma_upper": 0.124,
-      "picture_id": "-"
+      "picture_id": "O_15Hz_1.png",
+      "picture_items": [
+        {
+          "id": "O_15Hz_1.png",
+          "color": "blue"
+        }
+      ],
+      "color": "blue",
+      "index": 6
     },
     {
-      "index": 7,
       "drive_frequency": 15,
       "Frequency": 7.5,
       "df": 1,
       "f_min": 7,
       "f_max": 8,
       "gamma_lower_mV": 31,
-      "gamma_upper_mV": null,
+      "gamma_upper_mV": 50,
       "Gamma_lower": 0.124,
-      "Gamma_upper": null,
-      "picture_id": "O_15_2.1.tif"
+      "Gamma_upper": 0.2,
+      "picture_id": "O_15_2.1.png",
+      "picture_items": [
+        {
+          "id": "O_15_2.1.png",
+          "color": "brown"
+        },
+        {
+          "id": "O_15_2.2.png",
+          "color": "brown"
+        },
+        {
+          "id": "O_15_2.3.png",
+          "color": "brown"
+        }
+      ],
+      "color": "brown",
+      "index": 7
     },
     {
-      "index": 8,
-      "drive_frequency": 15,
-      "Frequency": 7.5,
-      "df": 1,
-      "f_min": 7,
-      "f_max": 8,
-      "gamma_lower_mV": 31,
-      "gamma_upper_mV": null,
-      "Gamma_lower": 0.124,
-      "Gamma_upper": null,
-      "picture_id": "O_15_2.2.tif"
-    },
-    {
-      "index": 9,
-      "drive_frequency": 15,
-      "Frequency": 7.5,
-      "df": 1,
-      "f_min": 7,
-      "f_max": 8,
-      "gamma_lower_mV": 31,
-      "gamma_upper_mV": null,
-      "Gamma_lower": 0.124,
-      "Gamma_upper": null,
-      "picture_id": "O_15_2.3.tif"
-    },
-    {
-      "index": 10,
       "drive_frequency": 16,
       "Frequency": 8,
       "df": 1,
@@ -151,23 +165,37 @@
       "gamma_upper_mV": 33.5,
       "Gamma_lower": 0,
       "Gamma_upper": 0.134,
-      "picture_id": "-"
+      "picture_id": "O_16Hz_1.png",
+      "picture_items": [
+        {
+          "id": "O_16Hz_1.png",
+          "color": "blue"
+        }
+      ],
+      "color": "blue",
+      "index": 8
     },
     {
-      "index": 11,
       "drive_frequency": 16,
       "Frequency": 8,
       "df": 1,
       "f_min": 7.5,
       "f_max": 8.5,
       "gamma_lower_mV": 33.5,
-      "gamma_upper_mV": null,
+      "gamma_upper_mV": 34.4,
       "Gamma_lower": 0.134,
-      "Gamma_upper": null,
-      "picture_id": "O_16_2.tif"
+      "Gamma_upper": 0.1376,
+      "picture_id": "O_16_2.png",
+      "picture_items": [
+        {
+          "id": "O_16_2.png",
+          "color": "red"
+        }
+      ],
+      "color": "red",
+      "index": 9
     },
     {
-      "index": 12,
       "drive_frequency": 17,
       "Frequency": 8.5,
       "df": 1,
@@ -177,23 +205,37 @@
       "gamma_upper_mV": 39.2,
       "Gamma_lower": 0,
       "Gamma_upper": 0.15680000000000002,
-      "picture_id": "-"
+      "picture_id": "O_17Hz_1.png",
+      "picture_items": [
+        {
+          "id": "O_17Hz_1.png",
+          "color": "blue"
+        }
+      ],
+      "color": "blue",
+      "index": 10
     },
     {
-      "index": 13,
       "drive_frequency": 17,
       "Frequency": 8.5,
       "df": 1,
       "f_min": 8,
       "f_max": 9,
       "gamma_lower_mV": 39.2,
-      "gamma_upper_mV": null,
+      "gamma_upper_mV": 48.2,
       "Gamma_lower": 0.15680000000000002,
-      "Gamma_upper": null,
-      "picture_id": "O_17Hz_2.tif"
+      "Gamma_upper": 0.1928,
+      "picture_id": "O_17Hz_2.png",
+      "picture_items": [
+        {
+          "id": "O_17Hz_2.png",
+          "color": "black"
+        }
+      ],
+      "color": "black",
+      "index": 11
     },
     {
-      "index": 14,
       "drive_frequency": 18,
       "Frequency": 9,
       "df": 1,
@@ -203,111 +245,95 @@
       "gamma_upper_mV": 45.6,
       "Gamma_lower": 0,
       "Gamma_upper": 0.1824,
-      "picture_id": "-"
+      "picture_id": "O_18Hz_1.png",
+      "picture_items": [
+        {
+          "id": "O_18Hz_1.png",
+          "color": "blue"
+        }
+      ],
+      "color": "blue",
+      "index": 12
     },
     {
-      "index": 15,
       "drive_frequency": 18,
       "Frequency": 9,
       "df": 1,
       "f_min": 8.5,
       "f_max": 9.5,
       "gamma_lower_mV": 45.6,
-      "gamma_upper_mV": 56.5,
+      "gamma_upper_mV": 49.1,
       "Gamma_lower": 0.1824,
-      "Gamma_upper": 0.226,
-      "picture_id": "O_18Hz_2.tif"
+      "Gamma_upper": 0.19640000000000002,
+      "picture_id": "O_18Hz_2.png",
+      "picture_items": [
+        {
+          "id": "O_18Hz_2.png",
+          "color": "purple"
+        }
+      ],
+      "color": "purple",
+      "index": 13
     },
     {
-      "index": 16,
-      "drive_frequency": 18,
-      "Frequency": 9,
-      "df": 1,
-      "f_min": 8.5,
-      "f_max": 9.5,
-      "gamma_lower_mV": 56.5,
-      "gamma_upper_mV": null,
-      "Gamma_lower": 0.226,
-      "Gamma_upper": null,
-      "picture_id": "O_18Hz_3.tif"
-    },
-    {
-      "index": 17,
-      "drive_frequency": 18,
-      "Frequency": 9,
-      "df": 1,
-      "f_min": 8.5,
-      "f_max": 9.5,
-      "gamma_lower_mV": 56.5,
-      "gamma_upper_mV": 56.5,
-      "Gamma_lower": 0.226,
-      "Gamma_upper": 0.226,
-      "picture_id": "O_18Hz_2.5.tif"
-    },
-    {
-      "index": 18,
       "drive_frequency": 19,
       "Frequency": 9.5,
       "df": 1,
       "f_min": 9,
       "f_max": 10,
       "gamma_lower_mV": 0,
-      "gamma_upper_mV": 56.9,
+      "gamma_upper_mV": 50.8,
       "Gamma_lower": 0,
-      "Gamma_upper": 0.2276,
-      "picture_id": "-"
+      "Gamma_upper": 0.2032,
+      "picture_id": "O_19Hz_1.png",
+      "picture_items": [
+        {
+          "id": "O_19Hz_1.png",
+          "color": "blue"
+        }
+      ],
+      "color": "blue",
+      "index": 14
     },
     {
-      "index": 19,
-      "drive_frequency": 19,
-      "Frequency": 9.5,
-      "df": 1,
-      "f_min": 9,
-      "f_max": 10,
-      "gamma_lower_mV": 56.9,
-      "gamma_upper_mV": 63,
-      "Gamma_lower": 0.2276,
-      "Gamma_upper": 0.252,
-      "picture_id": "O_19Hz_2.tif"
-    },
-    {
-      "index": 20,
-      "drive_frequency": 19,
-      "Frequency": 9.5,
-      "df": 1,
-      "f_min": 9,
-      "f_max": 10,
-      "gamma_lower_mV": 63,
-      "gamma_upper_mV": null,
-      "Gamma_lower": 0.252,
-      "Gamma_upper": null,
-      "picture_id": "O_19Hz_3.tif"
-    },
-    {
-      "index": 21,
       "drive_frequency": 20,
       "Frequency": 10,
       "df": 1,
       "f_min": 9.5,
       "f_max": 10.5,
       "gamma_lower_mV": 0,
+      "gamma_upper_mV": 57,
+      "Gamma_lower": 0,
+      "Gamma_upper": 0.228,
+      "picture_id": "O_20Hz_1.png",
+      "picture_items": [
+        {
+          "id": "O_20Hz_1.png",
+          "color": "blue"
+        }
+      ],
+      "color": "blue",
+      "index": 15
+    },
+    {
+      "drive_frequency": 20,
+      "Frequency": 10,
+      "df": 1,
+      "f_min": 9.5,
+      "f_max": 10.5,
+      "gamma_lower_mV": 57,
       "gamma_upper_mV": 64,
-      "Gamma_lower": 0,
+      "Gamma_lower": 0.228,
       "Gamma_upper": 0.256,
-      "picture_id": "-"
-    },
-    {
-      "index": 22,
-      "drive_frequency": 20,
-      "Frequency": 10,
-      "df": 1,
-      "f_min": 9.5,
-      "f_max": 10.5,
-      "gamma_lower_mV": 64,
-      "gamma_upper_mV": null,
-      "Gamma_lower": 0.256,
-      "Gamma_upper": null,
-      "picture_id": "O_20Hz.tif"
+      "picture_id": "O_20Hz_3.tif",
+      "picture_items": [
+        {
+          "id": "O_20Hz_3.tif",
+          "color": "black"
+        }
+      ],
+      "color": "black",
+      "index": 16
     }
   ]
 }
